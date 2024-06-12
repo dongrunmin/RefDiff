@@ -34,46 +34,45 @@ Note that during training, each high-resolution (HR) image, Ref image, and land 
 
 The SECOND dataset is organized in the following structure:
 
-\begin{verbatim}
-
+```bash
 SECOND/RefSR_dataset/
-
-- `train/` # Training set
-  - `CD_mask/` # 2,668 change detection labels (grayscale)
-  - `CD_mask_RGB/` # 2,668 change detection labels (RGB)
-  - `HR_512/` # 2,668 HR images with a size of 512 × 512
-  - `real_LR_D8_64/` # 2,668 8X downsampled LR images with a size of 64 × 64 using the real-world degradation model
-  - `real_LR_D16_32/` # 2,668 16X downsampled LR images with a size of 32 × 32 using the real-world degradation model
-  - `Ref/` # 2,668 reference images with a size of 512 × 512
-- `test/` # Test set
-  - `CD_mask/` # 1,200 change detection labels (grayscale)
-  - `CD_mask_RGB/` # 1,200 change detection labels (RGB)
-  - `HR_512/` # 1,200 HR images with a size of 256 × 256
-  - `Bic_LR_D8_32/` # 1,200 8X downsampled LR images with a size of 32 × 32 using the bicubic degradation model
-  - `Bic_LR_D16_16/` # 1,200 16X downsampled LR images with a size of 16 × 16 using the bicubic degradation model
-  - `Ref/` # 1,200 reference images with a size of 256 × 256
+- train/ # Training set
+  - CD_mask/ # 2,668 change detection labels (grayscale)
+  - CD_mask_RGB/ # 2,668 change detection labels (RGB)
+  - HR_512/ # 2,668 HR images with a size of 512 × 512
+  - real_LR_D8_64/ # 2,668 8X downsampled LR images with a size of 64 × 64 using the real-world degradation model
+  - real_LR_D16_32/ # 2,668 16X downsampled LR images with a size of 32 × 32 using the real-world degradation model
+  - Ref/ # 2,668 reference images with a size of 512 × 512
+- test/ # Test set
+  - CD_mask/ # 1,200 change detection labels (grayscale)
+  - CD_mask_RGB/ # 1,200 change detection labels (RGB)
+  - HR_512/ # 1,200 HR images with a size of 256 × 256
+  - Bic_LR_D8_32/ # 1,200 8X downsampled LR images with a size of 32 × 32 using the bicubic degradation model
+  - Bic_LR_D16_16/ # 1,200 16X downsampled LR images with a size of 16 × 16 using the bicubic degradation model
+  - Ref/ # 1,200 reference images with a size of 256 × 256
 - `CLASS_Table.txt` # CD mask description
+```
 
-**CNAM-CD:** CNAM-CD is a multi-class change detection dataset with a resolution of 0.5 meter, including 6 land cover classes, i.e., bare land, vegetation, water, impervious surfaces (buildings, roads, parking lots, squares, etc.), others (clouds, hard shadows, clutter, etc.), and unchanged areas. The image pairs are collected from Google Earth from 2013 to 2022. We use 2,258 image pairs with a size of $512\times 512$ for training and 1,000 image pairs with a size of $256\times 256$ for testing.
+**CNAM-CD:** CNAM-CD is a multi-class change detection dataset with a resolution of 0.5 meter, including 6 land cover classes, i.e., bare land, vegetation, water, impervious surfaces (buildings, roads, parking lots, squares, etc.), others (clouds, hard shadows, clutter, etc.), and unchanged areas. The image pairs are collected from Google Earth from 2013 to 2022. We use 2,258 image pairs with a size of 512 × 512 for training and 1,000 image pairs with a size of 256 × 256 for testing.
 
 The CNAM-CD dataset is organized in the following structure:
 
+```bash
 CNAM-CD/RefSR_dataset/
-
-- `train/` # Training set
-  - `CD_mask/` # 2,258 change detection labels (grayscale)
-  - `HR_512/` # 2,258 HR images with a size of  $512\times 512$
-  - `real_LR_D8_64/` # 2,258 8X downsampled LR images with a size of  $64\times 64$ using the real-world degradation model
-  - `real_LR_D16_32/` real_LR_D16_32/ # 2,258 16X downsampled LR images with a size of  $32\times 32$ using the real-world degradation model
-  - `Ref/` # 2,258 reference images with a size of $512\times 512$
-- `test/` # Test set
-  - `CD_mask/` # 1,000 change detection labels (grayscale)
-  - `HR_512/` # 1,000 HR images with a size of $256\times 256$ 
-  - `Bic_LR_D8_32/` # 1,000 8X downsampled LR images with a size of $32\times 32$ using the bicubic degradation model
-  - `Bic_LR_D16_16/` # 1,000 16X downsampled LR images with a size of $16\times 16$ using the bicubic degradation model
-  - `Ref/` # 1,000 reference images with a size of $256\times 256$ 
+- train/ # Training set
+  - CD_mask/ # 2,258 change detection labels (grayscale)
+  - HR_512/ # 2,258 HR images with a size of  512 × 512
+  - real_LR_D8_64/ # 2,258 8X downsampled LR images with a size of  64 × 64 using the real-world degradation model
+  - real_LR_D16_32/ real_LR_D16_32/ # 2,258 16X downsampled LR images with a size of  32 × 32using the real-world degradation model
+  - Ref/ # 2,258 reference images with a size of 512 × 512
+- test/ # Test set
+  - CD_mask/ # 1,000 change detection labels (grayscale)
+  - HR_512/ # 1,000 HR images with a size of 256 × 256
+  - Bic_LR_D8_32/ # 1,000 8X downsampled LR images with a size of 32 × 32 using the bicubic degradation model
+  - Bic_LR_D16_16/ # 1,000 16X downsampled LR images with a size of 16 × 16 using the bicubic degradation model
+  - Ref/ # 1,000 reference images with a size of 256 × 256 
 - `CLASS_Table.txt` # CD mask description
-
+```
 
 
 ## Inference
