@@ -50,7 +50,7 @@ SECOND/RefSR_dataset/
   - Bic_LR_D8_32/ # 1,200 8X downsampled LR images with a size of 32 × 32 using the bicubic degradation model
   - Bic_LR_D16_16/ # 1,200 16X downsampled LR images with a size of 16 × 16 using the bicubic degradation model
   - Ref/ # 1,200 reference images with a size of 256 × 256
-- `CLASS_Table.txt` # CD mask description
+- CLASS_Table.txt # CD mask description
 ```
 
 **CNAM-CD:** CNAM-CD is a multi-class change detection dataset with a resolution of 0.5 meter, including 6 land cover classes, i.e., bare land, vegetation, water, impervious surfaces (buildings, roads, parking lots, squares, etc.), others (clouds, hard shadows, clutter, etc.), and unchanged areas. The image pairs are collected from Google Earth from 2013 to 2022. We use 2,258 image pairs with a size of 512 × 512 for training and 1,000 image pairs with a size of 256 × 256 for testing.
@@ -71,7 +71,7 @@ CNAM-CD/RefSR_dataset/
   - Bic_LR_D8_32/ # 1,000 8X downsampled LR images with a size of 32 × 32 using the bicubic degradation model
   - Bic_LR_D16_16/ # 1,000 16X downsampled LR images with a size of 16 × 16 using the bicubic degradation model
   - Ref/ # 1,000 reference images with a size of 256 × 256 
-- `CLASS_Table.txt` # CD mask description
+- CLASS_Table.txt # CD mask description
 ```
 
 
