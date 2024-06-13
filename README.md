@@ -79,7 +79,7 @@ The CNAM-CD dataset is organized in the following structure:
 
 We provide the pre-trained checkpoint of RefDiff on SECOND_X8:
 
-  Download checkpoints of [SECOND_X8](https://drive.google.com/file/d/15zSQdz7qAv4v0uS9_jnDg5M3YlDaOIzf/view?usp=share_link), place it in `RefDiff-main/` and modify the paths in 'generate_SECOND_X8.sh', generate samples on the test set by command:
+  Download checkpoints of [SECOND_X8](https://drive.google.com/file/d/15zSQdz7qAv4v0uS9_jnDg5M3YlDaOIzf/view?usp=share_link), place it in `RefDiff-main/` and modify the paths in `generate_SECOND_X8.sh`, generate samples on the test set by command:
 
   ```bash
   sh generate_SECOND_X8.sh
@@ -88,7 +88,7 @@ We provide the pre-trained checkpoint of RefDiff on SECOND_X8:
 
 ## Training
 
-We provide an example for training RefDiff on the SECOND_X8 dataset. Please modify the paths in 'train_SECOND_X8.sh' and run command:
+We provide an example for training RefDiff on the SECOND_X8 dataset. Please modify the paths in `train_SECOND_X8.sh` and run command:
 
   ```bash
   sh train_SECOND_X8.sh
